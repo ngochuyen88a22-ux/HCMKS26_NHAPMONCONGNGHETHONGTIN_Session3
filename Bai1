@@ -1,0 +1,26 @@
+1. Phân tích:
+-Lưu ở C:\Windows\System32: Dễ làm hỏng Windows, bị chặn quyền không chạy/sửa được code
+-Đặt tên tệp/thư mục sai: Có khoảng trắng, hoa/thường xáo trộn, dấu tiếng Việt làm terminal dễ báo lỗi.
+-Hiểu nhầm tốc độ mạng:
+ + Nhà mạng tính bằng bit (100 Mbps)
+ + Trình duyệt tính bằng Byte (1 Byte = 8 bits)
+ + 100 : 8 = 12,5 MB/s => Tốc độ Nam nhận được là hoàn toàn chính xác
+- SSD 256 GB hiển thị kém hơn: Nhà sản xuất tính 1" GB"=1000" MB" , Windows tính 1 GB= 1024 MB (chia cho 1.0243 còn khoảng 238 GB, chưa trừ dung lượng cài Windows)
+2. Hoàn thiện: 
+Tên dùng chuẩn kebab-case (chữ thường, nối bằng dấu -, không khoảng trắng, không dấu)
+D:\
+|--- academic-projects/                 		 (Cấp 1: Phân loại chính)
+    |--- python-programming/        		     (Cấp 2: Tên môn học)
+    |   |--- session-01/               			 (Cấp 3: Buổi học / Chủ đề)
+    |   |   |--- ex01-variables.py       		 (Tệp bài tập chuẩn)
+    |   |--- session-02/
+    |       |--- ex01-conditionals.py
+    |--- data-structures/
+        |--- session-01/
+            |--- ex01-linked-list.py
+
+-Quy tắc cốt lõi:
+	Lưu ở ổ D: (không đụng vào ổ C: hệ thống)
+	Chuẩn kebab-case (bai-tap-1.py)
+	Đúng 3 cấp (Loại → Môn → Buổi)
+  Đánh số thứ tự (session-01, ex01) để tệp luôn xếp đúng thứ tự
