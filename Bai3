@@ -1,0 +1,15 @@
+1.	Thiết kế kiến trúc:
+Dữ liệu (Data) -> Thông tin (Information) -> Tri thức (Knowledge) -> Trí tuệ (Wisdom)
+-	Data: Cảm biến thu thập các thông số môi trường thô (độ ẩm 60%, nhiệt độ 36°C).
+-	Information: Xử lý dữ liệu thô thành cảnh báo, gửi thông báo kịp thời cho chủ vườn qua điện thoại.
+-	Knowledge: Áp dụng quy tắc tự động hóa: Nếu nhiệt độ lớn hơn 35°C thì tự động bật máy bơm.
+-	Wisdom: Phân tích dữ liệu lịch sử kết hợp dự báo thời tiết dài hạn để tối ưu hóa lượng nước tưới (tiết kiệm điện, nước và bảo vệ cây)
+2.	Ràng buộc và bẫy dữ liệu:
+Bẫy 1: Quản lý file ẩn 
+-	Cách hiện file ẩn: Trên File Explorer, chọn tab View, Chọn Hidden items (hoặc dùng tổ hợp phím Ctrl + Shift + . trong một số trình quản lý tệp)
+-	Thêm .env vào file .gitignore để tránh đẩy mật khẩu lên GitHub, Git
+-	Tạo file .env.example chứa cấu trúc khung (không chứa mật khẩu thật) để làm tài liệu hướng dẫn.
+Bẫy 2: Tính toán dung lượng ổ cứng trong 1 năm
+-	Dữ liệu sinh ra trong 1 năm : 50MB/ngày x 365 ngày = 18 250 MB gần bằng 18,25 GB 
+-	Tính dung lượng ổ cứng tối thiểu: Dữ liệu thực tế 18,25 GB chỉ được chiếm tối đa 70% dung lượng đĩa: 18,25 GB : 0,7 gần bằng 26,07 GB
+Vậy cần trang bị thẻ nhớ, ổ cứng có dung lượng khả dụng tối thiểu là 32 GB hoặc chọn 64 GB để dự phòng mở rộng
