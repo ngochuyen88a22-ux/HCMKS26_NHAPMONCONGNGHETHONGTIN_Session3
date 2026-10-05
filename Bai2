@@ -1,11 +1,10 @@
 1. Phân tích nguyên nhân và luồng IPO
-Tại sao Đường dẫn Tuyệt đối bị lỗi khi đổi máy?
--Nguyên nhân: Khi sang máy bạn thân, tên người dùng, tên ổ đĩa hoặc vị trí thư mục thay đổi (D:\Projects\Shopee-Lite\...). Hệ thống không tìm thấy đường dẫn cứng này nên báo lỗi FileNotFoundError
+Nguyên nhân đường dẫn tuyệt đối bị lỗi khi đổi máy: Khi sang máy bạn thân, tên người dùng, tên ổ đĩa hoặc vị trí thư mục thay đổi (D:\Projects\Shopee-Lite\...). Hệ thống không tìm thấy đường dẫn cứng này nên báo lỗi FileNotFoundError
 Luồng phối hợp CPU - RAM - Storage (Mô hình IPO)
 - Input (Nhập dữ liệu): Người dùng chạy ứng dụng.
 - Storage - RAM (Bộ nhớ): CPU lệnh cho Storage (SSD, HDD) nạp mã nguồn Python, dữ liệu và tệp ảnh logo.png vào RAM
 - Process (Xử lý - CPU): CPU đọc dữ liệu từ RAM, xử lý thuật toán và giải mã hình ảnh.
-- Output (Xuất dữ liệu): CPU gửi dữ liệu hình ảnh đã xử lý ra card màn hình/hiển thị lên giao diện (UI)
+- Output (Xuất dữ liệu): CPU gửi dữ liệu hình ảnh đã xử lý ra card màn hình, hiển thị lên giao diện
 -Nguyên nhân gây treo máy (RAM 98%): Dữ liệu ứng dụng nạp vào quá nhiều hoặc bị tràn bộ nhớ, vượt quá dung lượng RAM khả dụng. HĐH phải dùng ổ cứng làm RAM ảo – vốn chậm hơn RAM hàng trăm lần dẫn đến đứng máy
 2. Giải pháp kỹ thuật
 shopee-lite/
